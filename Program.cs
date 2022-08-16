@@ -2,25 +2,38 @@
 // числа (A и B) и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
-
+// способ 1
+Console.Write("Введите число A: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число B: ");
+int numB = Convert.ToInt32(Console.ReadLine());
+int Number = numA;
+{
+    for (int i = 1; i <= numB; i++)
+    {
+       Console.WriteLine(Number* numA);
+    }
+}
+Console.WriteLine($"число А в степени В равно: {Number}");
+// способ 2
 // Console.Write("Введите число A: ");
 // int numA = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите число B: ");
 // int numB = Convert.ToInt32(Console.ReadLine());
 // double result = Math.Pow(numA, numB);
-// Console.WriteLine($"Ответ: {result}");
+// Console.WriteLine($"число А в степени В равно: {result}");
 
 // Задача 27: Напишите программу, которая принимает на 
 // вход число и выдаёт сумму цифр в числе.
 
-Console.Write("Введите число N: ");
-int Number = Convert.ToInt32(Console.ReadLine());
-string sum = Convert.ToString(Number);
-length sum = Number.Length(sum);
-for (int i = 0; i <= Number; i++)
-{
-    Console.WriteLine(i);
-}
+// Console.Write("Введите число N: ");
+// int Number = Convert.ToInt32(Console.ReadLine());
+// string sum = Convert.ToString(Number);
+// length sum = Number.Length(sum);
+// for (int i = 0; i <= Number; i++)
+// {
+//     Console.WriteLine(i);
+// }
 
 
 // 452 -> 11
