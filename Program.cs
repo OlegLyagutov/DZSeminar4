@@ -7,11 +7,11 @@ Console.Write("Введите число A: ");
 int numA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B: ");
 int numB = Convert.ToInt32(Console.ReadLine());
-int Number = numA;
+int Number = 0;
 {
     for (int i = 1; i <= numB; i++)
     {
-       Console.WriteLine(Number* numA);
+       Number = numA[i] * numA[i+1];
     }
 }
 Console.WriteLine($"число А в степени В равно: {Number}");
@@ -26,9 +26,16 @@ Console.WriteLine($"число А в степени В равно: {Number}");
 // Задача 27: Напишите программу, которая принимает на 
 // вход число и выдаёт сумму цифр в числе.
 
-// Console.Write("Введите число N: ");
-// int Number = Convert.ToInt32(Console.ReadLine());
-// string sum = Convert.ToString(Number);
+Console.Write("Введите число N: ");
+int Number = Convert.ToInt32(Console.ReadLine());
+string sum = Convert.ToString(Number);
+
+for (i = 0;  i < Length; i++)
+{
+    sum = 0;
+    sum = sum += Number[i];
+}
+Console.WriteLine($"Сумма цифр равна {sum}");
 // length sum = Number.Length(sum);
 // for (int i = 0; i <= Number; i++)
 // {
