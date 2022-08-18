@@ -48,14 +48,31 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-Console.Write("Введите 8 чисел через запятую: ");
-int[] array = {};
-void PrintArray()
+// int[] Method(int size)
+// {
+//     int[] array = new int[size];
+
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//          array[i] = new Random().Next(100);
+//     }
+//     return array;
+// }
+// int[] testMethod = Method(8);
+// Console.WriteLine($"Массив: [ {String.Join(";",testMethod)} ]");
+
+
+//Console.Write("Введите 8 чисел через запятую: ");
+
+int[] Method(int size)
 {
-    int count = array.Length;
-    for (int i = 0; i < count; i++)
+    int[] array = new int[size];
+
+    for (int i = 0; i < array.Length; i++)
     {
-         Console.Write(array[i] + " ");
+         array[i] = Console.Write("Введите 8 чисел через запятую: ");
     }
+    return array;
 }
-Console.WriteLine($"Массив: [ {String.Join(";"), PrintArray()} ]");
+int[] testMethod = Method(8);
+Console.WriteLine($"Массив: [ {String.Join(";",testMethod)} ]");
