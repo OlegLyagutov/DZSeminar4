@@ -48,6 +48,8 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
+
+// вариант 1
 // int[] Method(int size)
 // {
 //     int[] array = new int[size];
@@ -66,11 +68,13 @@
 
 int[] Method(int size)
 {
-    int[] array = new int[size];
+    int[] array = {100};
 
     for (int i = 0; i < array.Length; i++)
     {
-         array[i] = Console.Write("Введите 8 чисел через запятую: ");
+        Console.Write("Введите 8 чисел через запятую: ");
+        array[i] = int.Parse(Console.ReadLine());
+        
     }
     return array;
 }
