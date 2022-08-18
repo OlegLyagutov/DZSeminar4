@@ -63,20 +63,21 @@
 // int[] testMethod = Method(8);
 // Console.WriteLine($"Массив: [ {String.Join(";",testMethod)} ]");
 
+// вариант 2
+// int[] Method(int size)
+// {
+//     int[] array = new int[size];
 
-//Console.Write("Введите 8 чисел через запятую: ");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"Введите элемент массива под индексом {i}: ");
+//         array[i] = int.Parse(Console.ReadLine());
+//     }
+//     return array;
+// }
+// int[] testMethod = Method(8);
+// Console.WriteLine($"Массив: [ {String.Join(";",testMethod)} ]");
 
-int[] Method(int size)
-{
-    int[] array = {100};
 
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write("Введите 8 чисел через запятую: ");
-        array[i] = int.Parse(Console.ReadLine());
-        
-    }
-    return array;
-}
-int[] testMethod = Method(8);
-Console.WriteLine($"Массив: [ {String.Join(";",testMethod)} ]");
+    
+   
